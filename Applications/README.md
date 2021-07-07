@@ -1,4 +1,6 @@
-# Applications
+# Application Assignments
+
+Check the tables below to see which applications and mini-apps have been assigned to your team.
 
 Broadly speaking we have broken down our applications into two catagories, `Mini-Apps` and `Full Applications`.
 Generally speaking mini-apps will have been ported to multiple different compilers and architectures to evaluate the robustness of the code and methods.
