@@ -30,7 +30,7 @@ We will use Spack in this workshop to manage the instalation of our codes, and m
 
 ### Compilers / MPI
 
-We have made a number of compilers and MPI installations available on the system.
+We have made a number of compilers available on the system.
 
 ```
 $ spack compiler list
@@ -48,32 +48,12 @@ You can then use a specific compiler to build a package by specifying it in the 
 $ spack install cloverleaf%arm@21.0.0.879
 ```
 
-We also have a number of MPI installs to use:
-
-```
-$ spack find -vl openmpi
-==> 2 installed packages
--- linux-amzn2-graviton2 / arm@21.0.0.879 -----------------------
-6bfbjqd openmpi@4.1.0~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=ofi patches=60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=slurm
-
--- linux-amzn2-graviton2 / gcc@10.3.0 ---------------------------
-ehtcdbv openmpi@4.1.0~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=ofi patches=60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=slurm
-```
-
-
-For this we can then look at the dependencies to install CloverLeaf with the Arm compiler, using the preinstalled Open MPI (specified by the hash `6bfbjqd`).
-
-```
-$ spack install cloverleaf%arm@21.0.0.879 ^openmpi/6bfbjqd
-```
-
-
 ## ReFrame
 
 [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) is used as a build and test harness for HPC applications.
 For this workshop we will just be doing 'Run only' tests, as we will be using Spack to manage the installs.
 
-We ask students to develop their own ReFrame files, an example is presented in the CloverLeaf folder (CloverLeaf BM16 Short)[CloverLeaf/cloverleaf_bm16_short.py].
+We ask students to develop their own ReFrame files. An example is presented in the CloverLeaf folder (CloverLeaf BM16 Short)[CloverLeaf/cloverleaf_bm16_short.py].
 Follow this template to harness the power of ReFrame to drive the job submission and validation of your test cases.
 
 ReFrame has also been configured to pass the performance logs to a GrayLog server, allowing us to analyse the output and automatically visualise the results.
