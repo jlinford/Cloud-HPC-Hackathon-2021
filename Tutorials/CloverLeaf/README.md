@@ -1,6 +1,6 @@
 # CloverLeaf
 
-Proxy Application. CloverLeaf is a miniapp that solves the compressible Euler equations on a Cartesian grid, using an explicit, second-order accurate method.
+CloverLeaf is a miniapp that solves the compressible Euler equations on a Cartesian grid, using an explicit, second-order accurate method.
 
 ## Compilation
 
