@@ -1,10 +1,10 @@
-# FleCSPH 
+# MemXCT
 
-**Description:** FleCSPH is a multi-physics compact application that exercises FleCSI parallel data structures for tree-based particle methods. In particular, FleCSPH implements a smoothed-particle hydrodynamics (SPH) solver for the solution of Lagrangian problems in astrophysics and cosmology. FleCSPH includes support for gravitational forces using the fast multipole method (FMM).
+**Description:** ABINIT is a package whose main program allows one to find the total energy, charge density and electronic structure of systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using pseudopotentials and a planewave or wavelet basis. ABINIT also includes options to optimize the geometry according to the DFT forces and stresses, or to perform molecular dynamics simulations using these forces, or to generate dynamical matrices, Born effective charges, and dielectric tensors, based on Density-Functional Perturbation Theory, and many more properties. Excited states can be computed within the Many-Body Perturbation Theory (the GW approximation and the Bethe-Salpeter equation), and Time- Dependent Density Functional Theory (for molecules). In addition to the main ABINIT code, different utility programs are provided.
 
-**URL:** http://flecsi.lanl.com
+**URL:** 
 
-**Team:** BlueHPCHens  
+**Team:**  
 
 ## Compilation
 
@@ -14,22 +14,20 @@ Details of any changes to the Spack recipe used.
 
 Git commit hash of checkout for pacakage:
 
-Pull request for Spack recipe changes: https://github.com/mferrato/spack/commit/2687874dc6e6d86a78ed405ebd8adaa941229489
+Pull request for Spack recipe changes:
 
-** Had to edit Spack package for FleCSPH **
-
-### Building FleCSPH
+### Building MemXCT
 
 
 
 #### Compiler 1
 
 ```
-spack install flecsph
+spack install <app>%<compiler1>
 ```
 
 ```
-$ spack load flecsph
+$ spack spec -Il <app>%<compiler1>
 
 ```
 

@@ -1,10 +1,15 @@
-# FleCSPH 
+# BLIS 
 
-**Description:** FleCSPH is a multi-physics compact application that exercises FleCSI parallel data structures for tree-based particle methods. In particular, FleCSPH implements a smoothed-particle hydrodynamics (SPH) solver for the solution of Lagrangian problems in astrophysics and cosmology. FleCSPH includes support for gravitational forces using the fast multipole method (FMM).
+**Description:** BLIS is a portable software framework for instantiating high-performance BLAS-like dense linear algebra libraries. 
+The framework was designed to isolate essential kernels of computation that, when optimized, immediately enable optimized implementations of most of its commonly used and computationally intensive operations. 
+BLIS is written in ISO C99 and available under a new/modified/3-clause BSD license. 
+While BLIS exports a new BLAS-like API, it also includes a BLAS compatibility layer which gives application developers access to BLIS implementations via traditional BLAS routine calls. 
+An object-based API unique to BLIS is also available.
 
-**URL:** http://flecsi.lanl.com
 
-**Team:** BlueHPCHens  
+**URL:** https://github.com/flame/blis
+
+**Team:**  
 
 ## Compilation
 
@@ -14,22 +19,20 @@ Details of any changes to the Spack recipe used.
 
 Git commit hash of checkout for pacakage:
 
-Pull request for Spack recipe changes: https://github.com/mferrato/spack/commit/2687874dc6e6d86a78ed405ebd8adaa941229489
+Pull request for Spack recipe changes:
 
-** Had to edit Spack package for FleCSPH **
-
-### Building FleCSPH
+### Building BLIS
 
 
 
 #### Compiler 1
 
 ```
-spack install flecsph
+spack install <app>%<compiler1>
 ```
 
 ```
-$ spack load flecsph
+$ spack spec -Il <app>%<compiler1>
 
 ```
 

@@ -1,10 +1,11 @@
-# FleCSPH 
+# Harminv 
 
-**Description:** FleCSPH is a multi-physics compact application that exercises FleCSI parallel data structures for tree-based particle methods. In particular, FleCSPH implements a smoothed-particle hydrodynamics (SPH) solver for the solution of Lagrangian problems in astrophysics and cosmology. FleCSPH includes support for gravitational forces using the fast multipole method (FMM).
+**Description:** Harminv is a free program (and accompanying library) to solve the problem of harmonic inversion - given a discrete-time, finite-length signal that consists of a sum of finitely-many sinusoids (possibly exponentially decaying) in a given bandwidth, it determines the frequencies, decay constants, amplitudes, and phases of those sinusoids.
 
-**URL:** http://flecsi.lanl.com
 
-**Team:** BlueHPCHens  
+**URL:** http://ab-initio.mit.edu/wiki/index.php/Harminv 
+
+**Team:**  
 
 ## Compilation
 
@@ -14,22 +15,20 @@ Details of any changes to the Spack recipe used.
 
 Git commit hash of checkout for pacakage:
 
-Pull request for Spack recipe changes: https://github.com/mferrato/spack/commit/2687874dc6e6d86a78ed405ebd8adaa941229489
+Pull request for Spack recipe changes:
 
-** Had to edit Spack package for FleCSPH **
-
-### Building FleCSPH
+### Building Harminv
 
 
 
 #### Compiler 1
 
 ```
-spack install flecsph
+spack install <app>%<compiler1>
 ```
 
 ```
-$ spack load flecsph
+$ spack spec -Il <app>%<compiler1>
 
 ```
 

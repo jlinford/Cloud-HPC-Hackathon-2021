@@ -1,10 +1,10 @@
-# FleCSPH 
+# BookLeaf-cpp
 
-**Description:** FleCSPH is a multi-physics compact application that exercises FleCSI parallel data structures for tree-based particle methods. In particular, FleCSPH implements a smoothed-particle hydrodynamics (SPH) solver for the solution of Lagrangian problems in astrophysics and cosmology. FleCSPH includes support for gravitational forces using the fast multipole method (FMM).
+**Description:** BookLeaf is a 2D unstructured hydrodynamics mini-app.
 
-**URL:** http://flecsi.lanl.com
+**URL:**  https://github.com/UK-MAC/BookLeaf_Cpp
 
-**Team:** BlueHPCHens  
+**Team:**  
 
 ## Compilation
 
@@ -14,22 +14,20 @@ Details of any changes to the Spack recipe used.
 
 Git commit hash of checkout for pacakage:
 
-Pull request for Spack recipe changes: https://github.com/mferrato/spack/commit/2687874dc6e6d86a78ed405ebd8adaa941229489
+Pull request for Spack recipe changes:
 
-** Had to edit Spack package for FleCSPH **
-
-### Building FleCSPH
+### Building BookLeaf-cpp
 
 
 
 #### Compiler 1
 
 ```
-spack install flecsph
+spack install <app>%<compiler1>
 ```
 
 ```
-$ spack load flecsph
+$ spack spec -Il <app>%<compiler1>
 
 ```
 

@@ -1,10 +1,12 @@
-# FleCSPH 
+# CCS-QCD
 
-**Description:** FleCSPH is a multi-physics compact application that exercises FleCSI parallel data structures for tree-based particle methods. In particular, FleCSPH implements a smoothed-particle hydrodynamics (SPH) solver for the solution of Lagrangian problems in astrophysics and cosmology. FleCSPH includes support for gravitational forces using the fast multipole method (FMM).
+**Description:** This program benchmarks the performance of a linear equation solver with a large sparse coefficient matrix appering in a lattice QCD problem. 
+Lattice QCD describes the property of protons, neutrons and neucleons in terms of more fundamental interacting elementary particles gluon and quarks.
 
-**URL:** http://flecsi.lanl.com
 
-**Team:** BlueHPCHens  
+**URL:** https://github.com/fiber-miniapp/ccs-qcd 
+
+**Team:**  
 
 ## Compilation
 
@@ -14,22 +16,20 @@ Details of any changes to the Spack recipe used.
 
 Git commit hash of checkout for pacakage:
 
-Pull request for Spack recipe changes: https://github.com/mferrato/spack/commit/2687874dc6e6d86a78ed405ebd8adaa941229489
+Pull request for Spack recipe changes:
 
-** Had to edit Spack package for FleCSPH **
-
-### Building FleCSPH
+### Building CCS-QCD
 
 
 
 #### Compiler 1
 
 ```
-spack install flecsph
+spack install <app>%<compiler1>
 ```
 
 ```
-$ spack load flecsph
+$ spack spec -Il <app>%<compiler1>
 
 ```
 

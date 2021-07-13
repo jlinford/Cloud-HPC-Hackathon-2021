@@ -28,6 +28,9 @@ The existing Spack package removes the compiler flags for GCC, and has no explic
 Note we have not added the corresponding flags for other compilers as this is out of scope for now.
 
 ```
+# spack edit cloverleaf
+# ...
+
          if '%gcc' in self.spec:
              targets.append('COMPILER=GNU')
 -            targets.append('FLAGS_GNU=')
@@ -147,7 +150,7 @@ $ spack spec -Il cloverleaf@1.1%nvhpc@21.2 ^openmpi/jmzsjsv
 [ReFrame Benchmark](cloverleaf_bm16_short.py)
 
 ```
-../bin/reframe -c CloverLeaf/cloverleaf_bm16_short.py -r --performance-report
+reframe -c CloverLeaf/cloverleaf_bm16_short.py -r --performance-report
 ```
 
 ### Validation
